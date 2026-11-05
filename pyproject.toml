@@ -14,12 +14,14 @@ dependencies = [
     "lxml",
 ]
 
+[project.scripts]
+run-nagios-passive-check-and-submit = "run_nagios.cli:main"
+
 [project.optional-dependencies]
 test = []
 
 [tool.setuptools]
 packages = { find = {} }
-script-files = ["run-nagios-passive-check-and-submit"]
 
 [dependency-groups]
 dev = [
