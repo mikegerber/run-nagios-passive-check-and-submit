@@ -1,8 +1,9 @@
-from bs4 import BeautifulSoup
 import os.path
-import requests
 import subprocess
+
+import requests
 import yaml
+from bs4 import BeautifulSoup
 
 
 def run_check(check):
