@@ -1,9 +1,7 @@
-from __future__ import division, print_function
 from bs4 import BeautifulSoup
 import os.path
 import requests
 import subprocess
-import sys
 import yaml
 
 

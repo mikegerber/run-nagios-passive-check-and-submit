@@ -1,7 +1,4 @@
 #!/usr/bin/python
-from __future__ import division
-import glob
-import sys
 import unittest
 
 from run_nagios import run_check
