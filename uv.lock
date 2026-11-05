@@ -318,15 +318,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pep8"
-version = "1.7.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/01/a0/64ba19519db49e4094d82599412a9660dee8c26a7addbbb1bf17927ceefe/pep8-1.7.1.tar.gz", hash = "sha256:fe249b52e20498e59e0b5c5256aa52ee99fc295b26ec9eaa85776ffdb9fe6374", size = 80334, upload-time = "2017-10-24T14:39:13.198Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/42/3f/669429ce58de2c22d8d2c542752e137ec4b9885fff398d3eceb1a7f5acb4/pep8-1.7.1-py2.py3-none-any.whl", hash = "sha256:b22cfae5db09833bb9bd7c8463b53e1a9c9b39f12e304a8d0bba729c501827ee", size = 41487, upload-time = "2017-10-24T14:39:11.465Z" },
-]
-
-[[package]]
 name = "pyyaml"
 version = "6.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -408,16 +399,10 @@ dependencies = [
     { name = "termcolor" },
 ]
 
-[package.optional-dependencies]
-test = [
-    { name = "pep8" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4" },
     { name = "lxml" },
-    { name = "pep8", marker = "extra == 'test'" },
     { name = "pyyaml" },
     { name = "requests" },
     { name = "termcolor" },

@@ -1,7 +1,6 @@
 #!/usr/bin/python
 from __future__ import division
 import glob
-import pep8
 import sys
 import unittest
 
