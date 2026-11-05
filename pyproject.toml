@@ -20,3 +20,27 @@ test = []
 [tool.setuptools]
 packages = { find = {} }
 script-files = ["run-nagios-passive-check-and-submit"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E4",   # Import errors
+    "E7",   # Statement errors
+    "E9",   # Runtime/syntax errors
+    "F",    # Pyflakes
+    "I",    # isort (import sorting)
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
