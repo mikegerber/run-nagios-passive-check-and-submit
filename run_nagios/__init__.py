@@ -29,10 +29,7 @@ def submit_result(host, service, plugin_state, plugin_output):
                        Loader=yaml.SafeLoader)
 
     # cmd_typ depends on whether we submit a service or host check result
-    if service:
-        cmd_typ = 30
-    else:
-        cmd_typ = 87
+    cmd_typ = 30 if service else 87
 
     # Shorten plugin_output
     max_plugin_output_length = 1022
@@ -56,9 +53,6 @@ def submit_result(host, service, plugin_state, plugin_output):
     # Extract error message if any
     soup = BeautifulSoup(r.content, 'lxml')
     error_div = soup.find('div', attrs={'class': 'errorMessage'})
-    if error_div:
-        error_text = error_div.text
-    else:
-        error_text = None
+    error_text = error_div.text if error_div else None
 
     return (r.status_code, error_text)
