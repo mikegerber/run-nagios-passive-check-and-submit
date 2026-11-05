@@ -8,8 +8,6 @@ Examples:
 
 Requires Python >= 2.7
 
-[![Build Status](https://travis-ci.org/neingeist/run-nagios-passive-check-and-submit.svg?branch=master)](https://travis-ci.org/neingeist/run-nagios-passive-check-and-submit)
-
 ![Screenhot of a few runs][screenshot]
 
 [screenshot]: https://github.com/neingeist/run-nagios-passive-check-and-submit/raw/master/docs/run-nagios-screenshot.png "Screenshot of a few runs"
